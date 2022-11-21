@@ -1,6 +1,6 @@
 {
-  "Header": {
-    "ID": "0",
+  "header": {
+    "ID": "5",
     "name": "concert_mobile_platform",
     "date":"16/11/2022",
     "author": "EdaordoRomiti",
@@ -9,7 +9,7 @@
     "cost": 0,
     "type": "mobile_base"
   },
-  "Bodies": [
+  "bodies": [
     {
       "ID": "5_mobile_base",
       "mass": 127.57599,
@@ -19,39 +19,37 @@
         [-6.4261485e-02,  9.1864796e-01,  2.3575473e+01]
       ],
       "r_com": [0.012213513, 0.0, -0.21761073],
-      "Geometry": {
-        "Visual": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_central_body.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ],
-        "Collision": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_central_body.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ]
-      },
-      "Connectors": [
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_central_body.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_central_body.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
         {
           "ID": "5_connector_1",
           "pose": [
@@ -113,7 +111,7 @@
           "size": "big"
         }
       ],
-      "Gazebo": [
+      "gazebo": [
         {
           "mu1": 0.2,
           "mu2": 0.2,
@@ -127,5 +125,5 @@
       ]
     }
   ],
-  "Joints": []
+  "joints": []
 }

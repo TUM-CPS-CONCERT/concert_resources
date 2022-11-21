@@ -1,5 +1,5 @@
 {
-  "Header": {
+  "header": {
     "ID": "4",
     "name": "concert_wheel_module",
     "date":"16/11/2022",
@@ -9,21 +9,19 @@
     "cost": 0,
     "type": "wheel"
   },
-  "Bodies": [
+  "bodies": [
     {
       "ID": "4_proximal",
       "mass": null,
       "inertia": null,
       "r_com": null,
-      "Geometry": {
-        "Visual": [
-          {}
-        ],
-        "Collision": [
-          {}
-        ]
-      },
-      "Connectors": [
+      "visual": [
+        {}
+      ],
+      "collision": [
+        {}
+      ],
+      "connectors": [
         {
           "ID": "4_input",
           "pose": [
@@ -37,7 +35,7 @@
           "size": "big"
         }
       ],
-      "Gazebo": [ 
+      "gazebo": [ 
         {}
       ]
     },
@@ -50,39 +48,37 @@
         [0.0,             0.0,            4.4954065e-02]
       ],
       "r_com": [0.0, 0.0, -0.005],
-      "Geometry": {
-        "Visual": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_wheel.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ],
-        "Collision": [
-          {
-            "type":"cylinder",
-            "parameters": {
-              "radius": 0.16,
-              "length": 0.1
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ]
-      },
-      "Connectors": [
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_wheel.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"cylinder",
+          "parameters": {
+            "radius": 0.16,
+            "length": 0.1
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
         {
           "ID": "4_output",
           "pose": [
@@ -96,7 +92,7 @@
           "size": "big"
         }
       ],
-      "Gazebo": [
+      "gazebo": [
         {
           "material": "Gazebo/Residential",
           "selfCollide": true,
@@ -131,7 +127,7 @@
       ]
     }
   ],
-  "Joints": [
+  "joints": [
     {
       "ID": "4_joint",
       "parent": "4_proximal",

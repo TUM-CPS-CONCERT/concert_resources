@@ -1,5 +1,5 @@
 {
-  "Header": {
+  "header": {
     "ID": "3",
     "name": "concert_steering_module",
     "date":"16/11/2022",
@@ -9,7 +9,7 @@
     "cost": 0,
     "type": "joint"
   },
-  "Bodies": [
+  "bodies": [
     {
       "ID": "3_proximal",
       "mass": 1.1813661,
@@ -19,39 +19,37 @@
         [1.7928188e-04,   0.0,            2.5223123e-03]
       ],
       "r_com": [-0.0079406061, 0.0, 0.037039629],
-      "Geometry": {
-        "Visual": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_connection_module.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ],
-        "Collision": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_connection_module.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ]
-      },
-      "Connectors": [
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_connection_module.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_connection_module.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
         {
           "ID": "3_input",
           "pose": [
@@ -65,7 +63,7 @@
           "size": "big"
         }
       ],
-      "Gazebo": [
+      "gazebo": [
         {
           "mu1": 0.2,
           "mu2": 0.2,
@@ -87,39 +85,37 @@
         [2.5595962e-02,   -2.6667139e-03,  6.9985532e-01]
       ],
       "r_com": [0.090718433, 0.0, -0.22670598],
-      "Geometry": {
-        "Visual": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_module_frame.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ],
-        "Collision": [
-          {
-            "type":"mesh",
-            "parameters": {
-              "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_module_frame.stl",
-              "scale": [0.001, 0.001, 0.001]
-            },
-            "pose": [
-              [1,0,0,0],
-              [0,1,0,0],
-              [0,0,1,0],
-              [0,0,0,1]
-            ]
-          }
-        ]
-      },
-      "Connectors": [
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_module_frame.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_module_frame.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
         {
           "ID": "3_output",
           "pose": [
@@ -133,7 +129,7 @@
           "size": "big"
         }
       ],
-      "Gazebo": [
+      "gazebo": [
         {
           "mu1": 0.2,
           "mu2": 0.2,
@@ -147,7 +143,7 @@
       ]
     }
   ],
-  "Joints": [
+  "joints": [
     {
       "ID": "3_joint",
       "parent": "3_proximal",

@@ -58,7 +58,7 @@
             [1, 0,  0,  -0.19500],
             [0, 0,  0,  1]
           ],
-          "gender": "f",
+          "gender": "m",
           "type": "clamp",
           "size": "big"
         },
@@ -70,7 +70,7 @@
             [1, 0,  0,  -0.19500],
             [0, 0,  0,  1]
           ],
-          "gender": "f",
+          "gender": "m",
           "type": "clamp",
           "size": "big"
         },
@@ -82,7 +82,7 @@
             [1, 0,  0,  -0.19500],
             [0, 0,  0,  1]
           ],
-          "gender": "f",
+          "gender": "m",
           "type": "clamp",
           "size": "big"
         },
@@ -94,7 +94,7 @@
             [1, 0,  0,  -0.19500],
             [0, 0,  0,  1]
           ],
-          "gender": "f",
+          "gender": "m",
           "type": "clamp",
           "size": "big"
         },
@@ -106,7 +106,7 @@
             [0, 0,  1,  0.016],
             [0, 0,  0,  1]
           ],
-          "gender": "f",
+          "gender": "m",
           "type": "clamp",
           "size": "big"
         }

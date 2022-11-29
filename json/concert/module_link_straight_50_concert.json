@@ -2,10 +2,10 @@
   "header": {
     "ID": "8",
     "name": "concert_link_straight_50",
-    "date":"16/11/2022",
+    "date":"2022-11-16",
     "author": "EdaordoRomiti",
     "affiliation": "IIT",
-    "authorEMail": "edoardo.romiti@iit.it",
+    "email": "edoardo.romiti@iit.it",
     "cost": 0,
     "type": "link"
   },

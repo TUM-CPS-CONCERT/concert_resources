@@ -2,10 +2,10 @@
   "header": {
     "ID": "5",
     "name": "concert_mobile_platform",
-    "date":"16/11/2022",
+    "date":"2022-11-16",
     "author": "EdaordoRomiti",
     "affiliation": "IIT",
-    "authorEMail": "edoardo.romiti@iit.it",
+    "email": "edoardo.romiti@iit.it",
     "cost": 0,
     "type": "mobile_base"
   },
@@ -23,7 +23,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_central_body.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_central_body.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -38,7 +38,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_central_body.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/simple/concert_central_body.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -107,7 +107,7 @@
             [0, 0,  0,  1]
           ],
           "gender": "m",
-          "type": "clamp",
+          "type": "base",
           "size": "big"
         }
       ],

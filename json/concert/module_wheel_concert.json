@@ -2,25 +2,19 @@
   "header": {
     "ID": "4",
     "name": "concert_wheel_module",
-    "date":"16/11/2022",
+    "date": "2022-11-16",
     "author": "EdaordoRomiti",
     "affiliation": "IIT",
-    "authorEMail": "edoardo.romiti@iit.it",
+    "email": "edoardo.romiti@iit.it",
     "cost": 0,
     "type": "wheel"
   },
   "bodies": [
     {
       "ID": "4_proximal",
-      "mass": null,
-      "inertia": null,
-      "r_com": null,
-      "visual": [
-        {}
-      ],
-      "collision": [
-        {}
-      ],
+      "mass": 0,
+      "inertia": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+      "r_com": [0, 0, 0],
       "connectors": [
         {
           "ID": "4_input",
@@ -52,7 +46,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_wheel.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_wheel.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -147,11 +141,11 @@
         [0.0,   0.0,    0.0,    1.0 ]
       ],
       "limits": {
-        "position_upper": 1e10,
-        "position_lower": -1e10,
+        "positionUpper": 1e10,
+        "positionLower": -1e10,
         "peak_torque": 314.0,
         "velocity": 6.6,
-        "acceleration": null
+        "acceleration": 0
       },
       "gear_ratio": 120.0,
       "motor_inertia": 0.0,

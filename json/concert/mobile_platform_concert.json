@@ -107,7 +107,7 @@
             [0, 0,  0,  1]
           ],
           "gender": "m",
-          "type": "base",
+          "type": "clamp",
           "size": "big"
         }
       ],

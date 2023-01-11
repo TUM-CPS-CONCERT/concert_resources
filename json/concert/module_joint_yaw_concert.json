@@ -167,7 +167,7 @@
         "positionLower": -3.0,
         "peak_torque": 314.0,
         "velocity": 6.6,
-        "acceleration": 0
+        "acceleration": null
       },
       "gear_ratio": 120.0,
       "motor_inertia": 0.0,

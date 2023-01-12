@@ -2,10 +2,10 @@
   "header": {
     "ID": "5",
     "name": "concert_mobile_platform",
-    "date":"16/11/2022",
+    "date":"2022-11-16",
     "author": "EdaordoRomiti",
     "affiliation": "IIT",
-    "authorEMail": "edoardo.romiti@iit.it",
+    "email": "edoardo.romiti@iit.it",
     "cost": 0,
     "type": "mobile_base"
   },

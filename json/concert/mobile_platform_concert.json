@@ -109,6 +109,18 @@
           "gender": "m",
           "type": "clamp",
           "size": "big"
+        },
+        {
+          "ID": "5_connector_base",
+          "pose": [
+            [1, 0,  0,  0.0],
+            [0, 1,  0,  0.0],
+            [0, 0,  1,  0.0],
+            [0, 0,  0,  1]
+          ],
+          "gender": "m",
+          "type": "base",
+          "size": "big"
         }
       ],
       "gazebo": [

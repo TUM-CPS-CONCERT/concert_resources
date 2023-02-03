@@ -143,11 +143,11 @@
       "limits": {
         "positionUpper": 1e10,
         "positionLower": -1e10,
-        "peak_torque": 314.0,
-        "velocity": 6.6,
+        "peak_torque": 24.0,
+        "velocity": 9.5,
         "acceleration": null
       },
-      "gear_ratio": 120.0,
+      "gear_ratio": 29.0,
       "motor_inertia": 0.0,
       "friction_coulomb": 0.0,
       "friction_viscous": 1.0,

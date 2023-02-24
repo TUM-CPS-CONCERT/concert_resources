@@ -46,7 +46,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/concert/concert_wheel.stl",
+            "file": "package://concert_resources/models/modular/meshes/concert/concert_wheel.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [

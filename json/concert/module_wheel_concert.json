@@ -1,6 +1,6 @@
 {
   "header": {
-    "ID": "4",
+    "ID": "51",
     "name": "concert_wheel_module",
     "date": "2022-11-16",
     "author": "EdaordoRomiti",
@@ -11,13 +11,13 @@
   },
   "bodies": [
     {
-      "ID": "4_proximal",
+      "ID": "51_proximal",
       "mass": 0,
       "inertia": [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
       "r_com": [0, 0, 0],
       "connectors": [
         {
-          "ID": "4_input",
+          "ID": "51_input",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "ID": "4_distal",
+      "ID": "51_distal",
       "mass": 4.0116207,
       "inertia": [
         [2.8580559e-02,   0.0,            0.0],
@@ -74,7 +74,7 @@
       ],
       "connectors": [
         {
-          "ID": "4_output",
+          "ID": "51_output",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -123,9 +123,9 @@
   ],
   "joints": [
     {
-      "ID": "4_joint",
-      "parent": "4_proximal",
-      "child": "4_distal",
+      "ID": "51_joint",
+      "parent": "51_proximal",
+      "child": "51_distal",
       "type": "revolute",
       "passive": "false",
       "pose_parent": [

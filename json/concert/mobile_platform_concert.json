@@ -1,6 +1,6 @@
 {
   "header": {
-    "ID": "5",
+    "ID": "23",
     "name": "concert_mobile_platform",
     "date":"2022-11-16",
     "author": "EdaordoRomiti",
@@ -11,7 +11,7 @@
   },
   "bodies": [
     {
-      "ID": "5_mobile_base",
+      "ID": "23_mobile_base",
       "mass": 127.57599,
       "inertia": [
         [1.9025397e+01,   -6.2823044e-01, -6.4261485e-02],
@@ -51,7 +51,7 @@
       ],
       "connectors": [
         {
-          "ID": "5_connector_1",
+          "ID": "23_connector_1",
           "pose": [
             [0, 0,  1,  0.37925],
             [0, -1, 0,  0.31250],
@@ -63,7 +63,7 @@
           "size": "big"
         },
         {
-          "ID": "5_connector_2",
+          "ID": "23_connector_2",
           "pose": [
             [0, 0,  1,  0.37925],
             [0, -1, 0,  -0.31250],
@@ -75,7 +75,7 @@
           "size": "big"
         },
         {
-          "ID": "5_connector_3",
+          "ID": "23_connector_3",
           "pose": [
             [0, 0,  -1, -0.37925],
             [0, 1,  0,  0.31250],
@@ -87,7 +87,7 @@
           "size": "big"
         },
         {
-          "ID": "5_connector_4",
+          "ID": "23_connector_4",
           "pose": [
             [0, 0,  -1, -0.37925],
             [0, 1,  0,  -0.31250],
@@ -99,7 +99,7 @@
           "size": "big"
         },
         {
-          "ID": "5_connector_5",
+          "ID": "23_connector_5",
           "pose": [
             [-1,  0,    0,  0.2 ],
             [0,   -1,   0,  0.0 ],
@@ -111,7 +111,7 @@
           "size": "big"
         },
         {
-          "ID": "5_connector_base",
+          "ID": "23_connector_base",
           "pose": [
             [1,  0,   0,  0.0],
             [0, -1,   0,  0.0],

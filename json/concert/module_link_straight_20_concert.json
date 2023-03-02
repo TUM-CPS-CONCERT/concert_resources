@@ -1,6 +1,6 @@
 {
   "header": {
-    "ID": "7",
+    "ID": "444",
     "name": "concert_link_straight_20",
     "date":"2022-11-16",
     "author": "EdaordoRomiti",
@@ -11,7 +11,7 @@
   },
   "bodies": [
     {
-      "ID": "7_link",
+      "ID": "444_link",
       "mass": 1.0657798,
       "inertia": [ 
         [7.4651361e-03,   3.1355726e-06,  -6.5578466e-07],
@@ -51,7 +51,7 @@
       ],
       "connectors": [
         {
-          "ID": "7_connector_1",
+          "ID": "444_connector_1",
           "pose": [
             [1, 0,  0,  0.0],
             [0, 1,  0,  0.0],
@@ -63,7 +63,7 @@
           "size": "big"
         },
         {
-          "ID": "7_connector_2",
+          "ID": "444_connector_2",
           "pose": [
             [1, 0,  0,  0.0],
             [0, 1,  0,  0.0],

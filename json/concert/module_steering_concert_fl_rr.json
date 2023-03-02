@@ -1,6 +1,6 @@
 {
   "header": {
-    "ID": "3",
+    "ID": "18",
     "name": "concert_steering_module",
     "date":"2022-11-16",
     "author": "EdaordoRomiti",
@@ -11,7 +11,7 @@
   },
   "bodies": [
     {
-      "ID": "3_proximal",
+      "ID": "18_proximal",
       "mass": 1.1813661,
       "inertia": [ 
         [2.6106263e-03,   0.0,            1.7928188e-04],
@@ -51,7 +51,7 @@
       ],
       "connectors": [
         {
-          "ID": "3_input",
+          "ID": "18_input",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "ID": "3_distal",
+      "ID": "18_distal",
       "mass": 7.6995028,
       "inertia": [
         [4.4048889e-01,   -3.6685350e-02, 2.5595962e-02],
@@ -117,7 +117,7 @@
       ],
       "connectors": [
         {
-          "ID": "3_output",
+          "ID": "18_output",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -145,9 +145,9 @@
   ],
   "joints": [
     {
-      "ID": "3_joint",
-      "parent": "3_proximal",
-      "child": "3_distal",
+      "ID": "18_joint",
+      "parent": "18_proximal",
+      "child": "18_distal",
       "type": "revolute",
       "passive": "false",
       "pose_parent": [

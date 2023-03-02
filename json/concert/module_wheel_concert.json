@@ -54,7 +54,8 @@
             [0,1,0,0],
             [0,0,1,0],
             [0,0,0,1]
-          ]
+          ],
+          "color": "black"
         }
       ],
       "collision": [
@@ -156,9 +157,7 @@
           "motor_has_brake": true,
           "control_mode": "71_motor_vel_ctrl",
           "pid": {
-            "position": [1000.0, 0.0, 30.0],
-            "velocity": [50.0, 0.0, 0.0],
-            "impedance": [500.0, 20.0, 1.0, 0.025, 0.99]
+            "velocity": [50.0, 0.0, 0.0]
           }
         },
         "xbot_gz": {

@@ -24,15 +24,15 @@
           "type":"cylinder",
           "parameters": {
             "radius": 0.0675,
-            "length": 0.5
+            "length": 0.5,
+            "color": "grey"
           },
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
             [0,0,1,0.25],
             [0,0,0,1]
-          ],
-          "color": "grey"
+          ]
         }
       ],
       "collision": [

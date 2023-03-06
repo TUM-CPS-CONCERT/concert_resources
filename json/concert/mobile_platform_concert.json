@@ -24,15 +24,15 @@
           "type":"mesh",
           "parameters": {
             "file": "package://concert_resources/models/modular/meshes/concert/concert_central_body.stl",
-            "scale": [0.001, 0.001, 0.001]
+            "scale": [0.001, 0.001, 0.001],
+            "color": "grey"
           },
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
             [0,0,1,0],
             [0,0,0,1]
-          ],
-          "color": "grey"
+          ]
         }
       ],
       "collision": [

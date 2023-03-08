@@ -1,0 +1,255 @@
+{
+  "header": {
+    "ID": "23_planar",
+    "name": "concert_mobile_platform_simplified",
+    "date":"2023-03-07",
+    "author": "JonathanKuelz",
+    "affiliation": "TUM",
+    "email": "jonathan.kuelz@tum.de",
+    "cost": 0,
+    "type": "mobile_base"
+  },
+  "bodies": [
+    {
+      "ID": "23_mobile_base",
+      "mass": 127.57599,
+      "inertia": [
+        [1.9025397e+01,   -6.2823044e-01, -6.4261485e-02],
+        [-6.2823044e-01,  1.3251602e+01,  9.1864796e-01],
+        [-6.4261485e-02,  9.1864796e-01,  2.3575473e+01]
+      ],
+      "r_com": [0.012213513, 0.0, -0.21761073],
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://concert_resources/models/modular/meshes/concert/concert_central_body.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": "grey"
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://concert_resources/models/modular/meshes/concert/simple/concert_central_body.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "ID": "23_connector_5",
+          "pose": [
+            [-1,  0,    0,  0.2 ],
+            [0,   -1,   0,  0.0 ],
+            [0,   0,    1,  0.016],
+            [0,   0,    0,  1   ]
+          ],
+          "gender": "m",
+          "type": "clamp",
+          "size": "big"
+        }
+      ],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/Grey",
+          "selfCollide": true
+        }
+      ]
+    },
+    {
+      "ID": "virtual_base_body",
+      "mass": 0.0,
+      "inertia": [
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.0 ],
+      "connectors": [
+        {
+          "ID": "23_connector_base",
+          "pose": [
+            [1,  0,   0,  0.0],
+            [0, -1,   0,  0.0],
+            [0,  0,  -1,  -0.667],
+            [0,  0,   0,  1]
+          ],
+          "gender": "m",
+          "type": "base",
+          "size": "big"
+        }
+      ],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/Grey",
+          "selfCollide": true
+        }
+      ]
+    },
+    {
+      "ID": "virtual_between_first",
+      "mass": 0.0,
+      "inertia": [
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.0 ],
+      "connectors": [],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/Grey",
+          "selfCollide": true
+        }
+      ]
+    },
+    {
+      "ID": "virtual_between_second",
+      "mass": 0.0,
+      "inertia": [
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.0 ],
+      "connectors": [],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/Grey",
+          "selfCollide": true
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "ID": "planar_x",
+      "parent": "virtual_base_body",
+      "child": "virtual_between_first",
+      "type": "prismatic",
+      "passive": false,
+      "pose_parent": [
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ -1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "pose_child": [
+        [ 0.0, 0.0, -1.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "limits": {
+        "positionLower": -10.0,
+        "positionUpper": 10.0,
+        "peakTorque": Infinity,
+        "velocity": 1.0,
+        "acceleration": Infinity
+      },
+      "gearRatio": 1.0,
+      "motorInertia": 0.0,
+      "frictionCoulomb": 0.0,
+      "frictionViscous": 0.0
+    },
+    {
+      "ID": "planar_y",
+      "parent": "virtual_between_first",
+      "child": "virtual_between_second",
+      "type": "prismatic",
+      "passive": false,
+      "pose_parent": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, -1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "pose_child": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, -1.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "limits": {
+        "positionLower": -10.0,
+        "positionUpper": 10.0,
+        "peakTorque": Infinity,
+        "velocity": 1.0,
+        "acceleration": Infinity
+      },
+      "gearRatio": 1.0,
+      "motorInertia": 0.0,
+      "frictionCoulomb": 0.0,
+      "frictionViscous": 0.0
+    },
+    {
+      "ID": "base_rotation",
+      "parent": "virtual_between_second",
+      "child": "23_mobile_base",
+      "type": "revolute",
+      "passive": false,
+      "pose_parent": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "pose_child": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "limits": {
+        "positionLower": -Infinity,
+        "positionUpper": Infinity,
+        "peakTorque": Infinity,
+        "velocity": 1.0,
+        "acceleration": Infinity
+      },
+      "gearRatio": 1.0,
+      "motorInertia": 0.0,
+      "frictionCoulomb": 0.0,
+      "frictionViscous": 0.0
+    }
+  ]
+}

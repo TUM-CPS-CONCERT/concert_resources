@@ -26,7 +26,7 @@
           ],
           "gender": "f",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         }
       ],
       "gazebo": [ 
@@ -84,7 +84,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         }
       ],
       "gazebo": [

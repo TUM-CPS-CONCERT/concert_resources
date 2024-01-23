@@ -61,7 +61,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         },
         {
           "ID": "23_connector_2",
@@ -73,7 +73,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         },
         {
           "ID": "23_connector_3",
@@ -85,7 +85,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         },
         {
           "ID": "23_connector_4",
@@ -97,7 +97,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         },
         {
           "ID": "23_connector_5",
@@ -109,7 +109,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "big"
+          "size": 100
         },
         {
           "ID": "23_connector_base",
@@ -121,7 +121,7 @@
           ],
           "gender": "m",
           "type": "base",
-          "size": "big"
+          "size": 100
         }
       ],
       "gazebo": [
